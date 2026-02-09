@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/Capa Acceso Datos/">
+    <Project Path="DataAcces/DataAcces.csproj" Id="7c8a3671-8d40-4f0d-b99a-878ccd82f33d" />
+    <Project Path="Entities/Entities.csproj" Id="2d6cefbb-9c97-4771-9f94-196284239371" />
+    <Project Path="Utilities/Utilities.csproj" Id="4962b0a9-d941-4fce-a908-0cb59edf8fb5" />
+  </Folder>
+  <Folder Name="/Capa Cliente/">
+    <Project Path="MVC.CitasMedicas/MVC.CitasMedicas.csproj" Id="b507b54f-a75b-4f6b-b320-7ec859c67beb" />
+  </Folder>
+  <Folder Name="/Capa Negocio/">
+    <Project Path="Business/Business.csproj" Id="557291d8-478f-448a-b79c-25f7c0bc7960" />
+  </Folder>
+  <Folder Name="/Capa Servidor/">
+    <Project Path="API.CitasMedicas/API.CitasMedicas.csproj" Id="6c042b71-f9c7-4240-8859-f0a3a1949669" />
+  </Folder>
+  <Folder Name="/Capa Transversal/">
+    <Project Path="DTO/DTO.csproj" Id="1f81060c-1db1-4431-b57e-dd14ead94bdd" />
+  </Folder>
+</Solution>
