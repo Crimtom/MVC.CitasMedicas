@@ -1,0 +1,48 @@
+@model DTO.Appointment.AppointmentCreateDto
+
+@{
+    ViewData["Title"] = "Nueva Cita";
+}
+
+<h1>Nueva Cita</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="mb-3">
+                <label asp-for="PatientId" class="form-label">ID Paciente</label>
+                <input asp-for="PatientId" class="form-control" type="number" />
+                <span asp-validation-for="PatientId" class="text-danger"></span>
+            </div>
+            
+            <div class="mb-3">
+                <label asp-for="DoctorId" class="form-label">ID Doctor</label>
+                <input asp-for="DoctorId" class="form-control" type="number" />
+                <span asp-validation-for="DoctorId" class="text-danger"></span>
+            </div>
+            
+            <div class="mb-3">
+                <label asp-for="AppointmentDateTime" class="form-label">Fecha y Hora</label>
+                <input asp-for="AppointmentDateTime" class="form-control" type="datetime-local" />
+                <span asp-validation-for="AppointmentDateTime" class="text-danger"></span>
+            </div>
+            
+            <div class="mb-3">
+                <label asp-for="Notes" class="form-label">Notas</label>
+                <textarea asp-for="Notes" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Notes" class="text-danger"></span>
+            </div>
+            
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Crear</button>
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
