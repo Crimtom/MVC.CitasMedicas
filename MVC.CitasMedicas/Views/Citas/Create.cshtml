@@ -1,0 +1,29 @@
+﻿<div class="card shadow p-4">
+    <h3>Crear Cita</h3>
+
+    <form id="formCita">
+
+        <div class="mb-3">
+            <label>Paciente</label>
+            <select id="paciente" class="form-control"></select>
+        </div>
+
+        <div class="mb-3">
+            <label>Doctor</label>
+            <select id="doctor" class="form-control"></select>
+        </div>
+
+        <div class="mb-3">
+            <label>Fecha y Hora</label>
+            <input type="text" id="fechaCita" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-success">Guardar</button>
+
+    </form>
+</div>
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="~/js/citas-create.js"></script>
